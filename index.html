@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./css/style.css">
+   <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+   <title>Ecommerce</title>
+</head>
+
+<body>
+   <!--   Encabezado principal -->
+   <header>
+      <nav class="cabecera">
+         <img src="./images/logo.png" alt="Ecommerce Talento Ttech" class="logo">
+         <h1 class="clase-cabecera">Ecommerce Talento Tech</h1><!--  Titulo del sitio -->
+         <!--   icono del carrito , con enlace a la pagina del carrito -->
+         <a href="./pages/carrito.html" class="icono-carrito">🛒 <span id="contador-carrito">0</span></a>
+      </nav>
+
+   </header>
+
+   <!--      Barra de navegacion principal -->
+   <nav>
+      <ul>
+         <li><a href="#">Inicio</a></li>
+         <li><a href="#">Productos</a></li>
+         <li><a href="./pages/contact.html">Contacto</a></li>
+      </ul>
+   </nav>
+
+   <!--   seccion de productos -->
+   <section id="productos" class="productos">
+      <!--  producto con descripcion , precio y bton para agregar al carrito -->
+      <article class="producto">
+         <!-- <img src="https://dummyimage.com/300x200/000/fff" alt="producto1"> -->
+         <h2>PC Gamer Armada</h2>
+         <img src="./images/pc.png" alt="PC Gamer">
+         <p>Intel Core I5 12400F + 8GB + RTX 2060 SUPER 8Gb</p>
+         <p class="precio">$819999.00</p>
+         <button onclick="agregarAlcarrito('PC Gamer Armada', 819999.00)">Agregar</button>
+      </article>
+
+      <!--  producto con descripcion , precio y bton para agregar al carrito -->
+      <article class="producto">
+         <h2>Monitor ASUS</h2>
+         <img src="./images/monitor.png" alt="Monitor 24 pulgadas">
+         <p>VA24EHE 24 IPS 75Hz HDMI Sin Bordes</p>
+         <p class="precio">$174999.00</p>
+         <button onclick="agregarAlcarrito('Monitor ASUS', 174999.00)">Agregar</button>
+      </article>
+
+   </section>
+
+   <script src="./js/index.js"></script>
+
+</body>
+<!-- pie de pagina -->
+<footer>
+   <div class="container">
+     <div class="row">
+ 
+      <div class="col-sm-2">Síguenos en: </div>
+      <div class="col-sm-1"><a href="https://twitter.com/inicio" target="_blank">Twitter</a></div>
+      <div class="col-sm-1"><a href="https://facebook.com/inicio" target="_blank">Facebook</a></div>
+      <div class="col-sm-2"><a href="https://instagram.com/inicio" target="_blank">Instagram</a></div>
+      <div class="col-sm-6">©2024 TP Integrador Talento Tech.Todos los derechos reservados</div>
+ </footer>
+</html>
